@@ -1,0 +1,8 @@
+Possibly helpful functions for grading: print_bios in parse.py can be useful for grading parsing and weighting of words. print_children in graph.py can be used to print the children of every vertex in the graph
+
+names of clusters were done as follows:
+-if cluster had many nodes: find the 2 words with the most occurences in the cluster
+-if cluster had 1 node: find the 2 words that appear the least in the entire input file using the weights dict
+
+collaborators: None from class. However, I did use Vivake Gupta's python porter stemming algorithm from: https://tartarus.org/martin/PorterStemmer/. porterstemmer.py is all his code and his code does not appear anywhere else in this repository.
+
