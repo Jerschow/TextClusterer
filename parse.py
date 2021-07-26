@@ -104,7 +104,7 @@ def porterstemming(bios,i,j,portertooriginal):
 
 def remove_or_modify(bios,i,j,stopwords,portertooriginal):
     bios,word,portertooriginal = porterstemming(bios,i,j,portertooriginal)
-    bios,removed = check_remove(bios,i,j,word,stopwords)
+    bios,removed = check_remove(bios,i,j,portertooriginal[word],stopwords)
     return bios,word,removed,portertooriginal
 
 def update_weights(word,thistext,weights):

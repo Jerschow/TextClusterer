@@ -63,7 +63,7 @@ def determine_frequent_by_occurence(word,weight,mostfreq2,mostfreq2vals):
     return mostfreq2,mostfreq2vals
 
 def determine_frequent_by_log(word,weight,mostfreq2,mostfreq2vals):
-    if len(word) > 3:
+    if len(word) > 3 and word != mostfreq2[0] and word != mostfreq2[1]:
         if weight > mostfreq2vals[1]:
             mostfreq2vals[1] = weight
             mostfreq2[1] = word
