@@ -55,6 +55,9 @@ def readline(rest):
     for i in np.arange(len(rest)):
         char = rest[i]
         if wasbackslash and char == "\n":
+            if description.strip() == "":
+                print("Error: name of bio without description of bio")
+                exit(1)
             return s,name,description,rest[count:],True
         if char == "\n":
             wasbackslash = donewname = True
